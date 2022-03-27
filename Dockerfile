@@ -5,10 +5,12 @@ FROM cm2network/steamcmd:root
 
 LABEL maintainer="hola@tomasroggero.com"
 
+ENV SERVERNAME "changeme"
+ENV SERVERPASS "changeme"
+
 ENV STEAMAPPID 380870
 ENV STEAMAPP pz
 ENV STEAMAPPDIR "${HOMEDIR}/${STEAMAPP}-dedicated"
-ENV SERVERNAME "changeme"
 ENV DLURL https://raw.githubusercontent.com/tomasdev/pzsv
 
 RUN set -x \
