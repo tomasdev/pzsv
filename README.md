@@ -11,5 +11,5 @@ To change the ini file (pending work)
 1. `docker ps -a` to list all containers, to find the CONTAINER_ID. If the container is not running, probably there's an error on the logs.
 2. `docker logs -f $CONTAINER_ID` to see the live logs on the server starting up. Look for the line `Zomboid Server is VAC Secure`
 3. `docker exec -it $CONTAINER_ID bash` to ssh into the container
-4. (inside the container) `vi Zomboid/Server/changeme.ini` to change the settings of the server.
+4. (inside the container) `nano Zomboid/Server/changeme.ini` to change the settings of the server.
 5. `docker stop $CONTAINER_ID && docker start $CONTAINER_ID` to restart the server and pickup the changes.
