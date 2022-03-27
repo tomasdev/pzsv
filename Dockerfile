@@ -32,5 +32,9 @@ WORKDIR ${HOMEDIR}
 CMD ["bash", "entry.sh"]
 
 # Expose ports
-EXPOSE 8766/udp \
-	16261/udp
+EXPOSE 8766/udp
+EXPOSE 8766/tcp
+EXPOSE 8767/udp
+EXPOSE 8767/tcp
+EXPOSE 16261/udp
+EXPOSE 16261/tcp
