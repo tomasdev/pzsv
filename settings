@@ -1,3 +1,5 @@
 AnnounceDeath=true
 
 PauseEmpty=true
+
+TrashDeleteAll=true
